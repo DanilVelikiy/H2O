@@ -1,0 +1,13 @@
+{
+  "shell_port": 54567,
+  "iopub_port": 60207,
+  "stdin_port": 44795,
+  "control_port": 52897,
+  "hb_port": 53279,
+  "ip": "127.0.0.1",
+  "key": "7eafd106-1eea9eb90846c1d6b912aac0",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/jupyter/h2o_balanced_ultimate.ipynb"
+}
