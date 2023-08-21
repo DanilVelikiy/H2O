@@ -46,6 +46,7 @@ RUN pip install h2o==3.42.0.2
 #RUN sudo apt-get install openjdk-11-jre-headless -y
 RUN add-apt-repository ppa:linuxuprising/java
 RUN sudo apt install openjdk-11-jdk -y
+RUN pip install matplotlib==3.7.2
 
 # создам системного пользователя для jupiter
 RUN useradd -ms /bin/bash jupyter
