@@ -12,6 +12,7 @@ RUN sudo apt install python3.10 -y
 RUN apt-get install --yes python3-pip
 RUN python3 -m pip install --upgrade pip setuptools wheel
 RUN pip install jupyterlab==4.0.5
+RUN pip install matplotlib==3.7.2
 
 # это взял из какой то официальной сборки на гитхаб по юпитеру
 # Install all OS dependencies for notebook server that starts but lacks all
