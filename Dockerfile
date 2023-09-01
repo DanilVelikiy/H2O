@@ -12,7 +12,6 @@ RUN sudo apt install python3.10 -y
 RUN apt-get install --yes python3-pip
 RUN python3 -m pip install --upgrade pip setuptools wheel
 RUN pip install jupyterlab==4.0.5
-RUN pip install matplotlib==3.7.2
 
 # это взял из какой то официальной сборки на гитхаб по юпитеру
 # Install all OS dependencies for notebook server that starts but lacks all
@@ -44,10 +43,13 @@ RUN apt-get update --yes && \
     locale-gen
 
 RUN pip install h2o==3.42.0.2
-#RUN sudo apt-get install openjdk-11-jre-headless -y
+RUN sudo apt update
 RUN add-apt-repository ppa:linuxuprising/java
 RUN sudo apt install openjdk-11-jdk -y
 RUN pip install matplotlib==3.7.2
+RUN pip install scikit-learn==1.3.0
+RUN pip install pandas==2.0.3
+RUN pip install jupyterlab-execute-time==3.0.1
 
 # создам системного пользователя для jupiter
 RUN useradd -ms /bin/bash jupyter
